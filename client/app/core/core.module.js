@@ -5,6 +5,8 @@
       .module('app.core', [
         'ui.router',
         'app.home',
-        'app.error'
+        'app.error',
+        'angulartics',
+        'angulartics.google.analytics'
       ]);
 })();
