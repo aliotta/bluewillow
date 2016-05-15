@@ -1,0 +1,21 @@
+{
+  "name": "bluewillow",
+  "authors": [
+    "Alex Liotta <aliotta343@gmail.com>"
+  ],
+  "description": "herbalist",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "none"
+  ],
+  "license": "",
+  "homepage": "bluewillow.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
