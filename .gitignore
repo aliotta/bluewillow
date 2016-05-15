@@ -1,0 +1,8 @@
+syntax:glob
+.DS_Store
+.env
+.sass-cache
+node_modules/
+client/bower_components
+dump.rdb
+npm-debug.log
