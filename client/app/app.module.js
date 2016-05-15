@@ -23,7 +23,7 @@
                 template: '<div ui-view />'
             });
         }
-    ])
+    ]);
 
 
 })();
