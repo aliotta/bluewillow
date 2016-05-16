@@ -7,7 +7,7 @@
     .config(['$stateProvider', function($stateProvider) {
         $stateProvider
         .state('site.services', {
-            url: '/',
+            url: '/services',
             views: {
                 '@site': {
                     templateUrl: 'app/layout/shell.html',

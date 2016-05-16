@@ -7,7 +7,7 @@
     .config(['$stateProvider', function($stateProvider) {
         $stateProvider
         .state('site.about', {
-            url: '/',
+            url: '/about',
             views: {
                 '@site': {
                     templateUrl: 'app/layout/shell.html',
