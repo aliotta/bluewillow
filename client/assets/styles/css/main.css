@@ -1,0 +1,481 @@
+/* screen sizes */
+/* responsive constants */
+html, body {
+  font-size: 16px; }
+
+.gothamBook, .editLink {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400; }
+
+.page-title, .page-subtitle, .subheader {
+  color: #5A5A5A;
+  font-size: 2.25em;
+  font-family: "Gotham A", "Gotham B";
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  margin-top: 40px;
+  text-align: center; }
+
+.page-subtitle {
+  font-size: 1.5em;
+  margin-bottom: 10px; }
+
+.subheader {
+  font-size: 1em; }
+
+@media (min-width: 62em) {
+  .page-title, .page-subtitle, .subheader {
+    text-align: left;
+    margin-top: 0; } }
+
+.button, .primaryButton, .secondaryButton, .smallButton, .link, .editLink {
+  text-align: center;
+  border-radius: 3px;
+  padding: 4px 20px 4px 20px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  color: #FFFFFF;
+  letter-spacing: -0.5px;
+  border: 0px; }
+
+.primaryButton {
+  height: 65px;
+  width: 340px; }
+
+.secondaryButton {
+  height: 46px;
+  width: 240px; }
+
+.smallButton {
+  width: 69px;
+  height: 46px; }
+
+.link, .editLink {
+  color: blue; }
+  .link:hover, .editLink:hover {
+    cursor: pointer; }
+
+.editLink {
+  font-size: 1.125em;
+  color: #1283FC;
+  letter-spacing: -0.5px;
+  line-height: 21px; }
+
+a {
+  color: blue; }
+  a:hover {
+    cursor: pointer; }
+
+/*  Responsive typography*/
+/* responsive constants */
+html, body {
+  font-size: 16px; }
+
+/*  Responsive typography*/
+/* generic */
+/* Import bootstrap-sass so that we have access to all of its selectors */
+/* responsive constants */
+/* screen sizes */
+body {
+  font-size: 100%; }
+
+/*  Reaponsive typography*/
+#page {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */ }
+
+@media (min-width: 55em) {
+  #page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */ } }
+
+h1 {
+  font-family: "Gotham A", "Gotham B";
+  font-size: 2.5em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */ }
+
+@media (min-width: 55em) {
+  h1 {
+    font-size: 4em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125; } }
+
+@media (min-width: 95em) {
+  h1 {
+    font-size: 5em;
+    line-height: 1.05; } }
+
+h2 {
+  font-family: "Gotham A", "Gotham B";
+  font-size: 1.5em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */ }
+
+@media (min-width: 55em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25; } }
+
+@media (min-width: 95em) {
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25; } }
+
+h3 {
+  font-family: "Gotham A", "Gotham B";
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */ }
+
+@media (min-width: 55em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25; } }
+
+@media (min-width: 95em) {
+  h3 {
+    font-size: 1.75em;
+    line-height: 1.25; } }
+
+h4 {
+  font-family: "Gotham A", "Gotham B";
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+  font-weight: normal; }
+
+@media (min-width: 55em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */ } }
+
+@media (min-width: 95em) {
+  h4 {
+    line-height: 1.33333333; } }
+
+blockquote {
+  font-family: "Gotham A", "Gotham B";
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+  border: 0px; }
+
+@media (min-width: 55em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */ } }
+
+@media (min-width: 95em) {
+  blockquote {
+    font-size: 1.75em;
+    line-height: 1.6; } }
+
+p {
+  font-family: "Gotham A", "Gotham B";
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+  border: 0px; }
+
+@media (min-width: 55em) {
+  p {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */ } }
+
+@media (min-width: 95em) {
+  p {
+    font-size: 1.75em;
+    line-height: 1.6; } }
+
+.defaultPadding {
+  padding: 20px; }
+
+.navigationMenu, .leftsubmenu li a {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  color: #626262; }
+
+.title {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  color: #5A5A5A;
+  letter-spacing: -1.5px;
+  margin: 0px; }
+
+.centerBlock, .logoColumnMobile img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.sideTitle {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #5A5A5A;
+  letter-spacing: -1.5px; }
+
+.pieLabel {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #D73A29;
+  letter-spacing: -1.5px; }
+
+.pieIngredients {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5C5C5C;
+  letter-spacing: -0.5px;
+  line-height: 23px; }
+
+.piePrice {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #5A5A5A;
+  letter-spacing: 0px; }
+
+.pizzaDetails {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5A5A5A;
+  letter-spacing: -0.5px; }
+
+.subtotal {
+  font-family: OpenSans-Semibold;
+  font-size: 11px;
+  color: #5A5A5A;
+  letter-spacing: 0.89px; }
+  .subtotal div.uppercase {
+    text-transform: uppercase; }
+
+.editText {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1283FC;
+  letter-spacing: -0.5px;
+  line-height: 21px; }
+
+.logo {
+  width: 118px;
+  margin-top: -59px; }
+
+.logoRow {
+  background-color: transparent;
+  margin-bottom: 0px; }
+
+.logoColumn {
+  margin-bottom: 49px; }
+  .logoColumn img {
+    width: 118px;
+    margin-top: -59px;
+    margin-left: 45px; }
+
+.submenu {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 0; }
+  .submenu li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 1.2em;
+    padding-bottom: 4px;
+    color: #737272; }
+    .submenu li:hover {
+      border-bottom: 1px solid #5A5A5A;
+      padding-bottom: 3px;
+      cursor: pointer; }
+    .submenu li a {
+      color: grey; }
+  .submenu .selected {
+    color: #D73A29;
+    font-weight: 500; }
+    .submenu .selected:hover {
+      border: none;
+      color: black;
+      cursor: default; }
+
+.leftsubmenu {
+  padding: 0px;
+  list-style: none;
+  margin-bottom: 0;
+  float: left;
+  display: inline-block; }
+  .leftsubmenu ul {
+    margin: 0px; }
+  .leftsubmenu li {
+    display: block;
+    padding-left: 20px;
+    padding-bottom: 4px; }
+    .leftsubmenu li:hover {
+      padding-bottom: 3px;
+      cursor: pointer; }
+    .leftsubmenu li .selected {
+      color: #D73A29;
+      font-weight: 500; }
+      .leftsubmenu li .selected:hover {
+        border: none;
+        color: black;
+        cursor: default; }
+
+.middleColumn {
+  padding-top: 33px; }
+
+.endColumn {
+  padding-top: 33px; }
+
+.header {
+  background-color: #FFFFFF;
+  height: 86px;
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 1.25em; }
+  .header img {
+    vertical-align: baseline; }
+
+@media (min-width: 55em) {
+  .header {
+    font-size: 1.5em; } }
+
+@media (min-width: 95em) {
+  .header {
+    font-size: 1.75em; } }
+
+.headerImage {
+  height: 0;
+  padding-bottom: 30.66406%;
+  background: url("../../images/bg_img_6.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  min-width: 550px; }
+
+.footer {
+  padding: 20px;
+  background-color: #FFFFFF; }
+  .footer ul {
+    list-style-type: none;
+    padding: 0px; }
+  .footer ul:first-child {
+    margin-top: 10px; }
+  .footer li {
+    margin-bottom: 5px;
+    margin-bottom: 5px; }
+  .footer .row {
+    margin-bottom: 15px; }
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+.right-align {
+  text-align: right; }
+
+.greeting {
+  margin: 15px;
+  color: #D73A29; }
+
+li {
+  font-family: "Gotham A", "Gotham B"; }
+
+.footerRightList li {
+  text-align: right; }
+
+input {
+  font-family: "Gotham A", "Gotham B";
+  padding: 10px;
+  font-size: 1em; }
+
+@media (min-width: 55em) {
+  input {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */ } }
+
+@media (min-width: 95em) {
+  input {
+    font-size: 1.75em;
+    line-height: 1.6; } }
+
+button {
+  font-family: "Gotham A", "Gotham B";
+  font-size: 1em; }
+
+@media (min-width: 55em) {
+  button {
+    font-size: 2em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */ } }
+
+@media (min-width: 95em) {
+  button {
+    font-size: 3em;
+    line-height: 1.6; } }
+
+.linkedin {
+  display: inline-block;
+  height: 36px;
+  width: 38px;
+  background: url("../../images/icon_social_linkedin_38x36.png") no-repeat;
+  margin-left: 10px; }
+
+.facebook {
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  background: url("../../images/icon_social_facebook_36x36.png") no-repeat;
+  margin-left: 10px; }
+
+.twitter {
+  display: inline-block;
+  height: 34px;
+  width: 42px;
+  background: url("../../images/icon_social_twitter_42x34.png") no-repeat;
+  margin-left: 10px; }
+
+.instagram {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background: url("../../images/icon_social_instagram_35x35.png") no-repeat;
+  margin-left: 10px; }
+
+.social-icons {
+  padding-top: 30px;
+  padding-bottom: 30px; }
