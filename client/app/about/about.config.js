@@ -2,11 +2,11 @@
     'use strict';
 
     angular
-    .module('app.home', ['app.core'])
+    .module('app.about', ['app.core'])
 
     .config(['$stateProvider', function($stateProvider) {
         $stateProvider
-        .state('site.home', {
+        .state('site.about', {
             url: '/',
             views: {
                 '@site': {
@@ -14,19 +14,19 @@
                     controller: 'ShellController',
                     controllerAs: 'vm'
                 },
-                'main@site.home': {
+                'main@site.about': {
                     templateUrl: 'app/layout/col_three.html',
-                    controller: 'HomeController',
+                    controller: 'AboutController',
                     controllerAs: 'vm'
                 },
-                'middle@site.home': {
-                    templateUrl: 'app/home/home.html'
+                'middle@site.about': {
+                    templateUrl: 'app/about/about.html'
                 },
-                'left@site.home': {
-                    templateUrl: 'app/home/home_left.html'
+                'left@site.about': {
+                    templateUrl: 'app/about/about_left.html'
                 },
-                'right@site.home': {
-                    templateUrl: 'app/home/home_right.html'
+                'right@site.about': {
+                    templateUrl: 'app/about/about_right.html'
                 }
             }
         });

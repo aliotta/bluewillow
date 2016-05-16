@@ -12,8 +12,14 @@ var express         = require('express'),
 
 var port = process.env.PORT || 5000; 
 
+var clientPath;
+if(process.env.NODE_ENV === 'production'){
+    clientPath = '/dist';
+} else {
+    clientPath = '/client';
+}
 
-app.use(express.static(__dirname + "/dist"));
+app.use(express.static(__dirname + clientPath));
 
 
 // =======================
@@ -23,7 +29,7 @@ app.use(express.static(__dirname + "/dist"));
 var server = http.createServer(app);
 
 server.listen(port, function(){
-  console.info('Express server listening on port ' + port);
+    console.info('Express server listening on port ' + port);
 });
 
 

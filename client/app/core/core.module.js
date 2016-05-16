@@ -6,6 +6,8 @@
         'ui.router',
         'app.home',
         'app.error',
+        'app.services',
+        'app.about',
         'angulartics',
         'angulartics.google.analytics'
       ]);

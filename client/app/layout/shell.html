@@ -1,1 +1,18 @@
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <h1 class='col-xs-12'>Blue Willow</h1>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li ng-class="{ 'active': vm.selected === 'home'}"><a ui-sref="site.home">Home</a></li>
+          <li ng-class="{ 'active': vm.selected === 'about'}"><a ui-sref="site.about">About Bridget</a></li>
+          <li ng-class="{ 'active': vm.selected === 'services'}"><a ui-sref="site.services">Services</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
+
 <div ui-view='main'></div>
