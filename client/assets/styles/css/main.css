@@ -29,6 +29,15 @@ html, body {
     text-align: left;
     margin-top: 0; } }
 
+nav {
+  background-image: url("../../images/header.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0px -300px; }
+
+.nav-link {
+  color: #FFFFFF; }
+
 .button, .primaryButton, .secondaryButton, .smallButton, .link, .editLink {
   text-align: center;
   border-radius: 3px;
@@ -238,71 +247,6 @@ p {
   color: #5A5A5A;
   letter-spacing: -1.5px; }
 
-.pieLabel {
-  font-family: "Gotham A", "Gotham B";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  color: #D73A29;
-  letter-spacing: -1.5px; }
-
-.pieIngredients {
-  font-family: "Gotham A", "Gotham B";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  color: #5C5C5C;
-  letter-spacing: -0.5px;
-  line-height: 23px; }
-
-.piePrice {
-  font-family: "Gotham A", "Gotham B";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  color: #5A5A5A;
-  letter-spacing: 0px; }
-
-.pizzaDetails {
-  font-family: "Gotham A", "Gotham B";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  color: #5A5A5A;
-  letter-spacing: -0.5px; }
-
-.subtotal {
-  font-family: OpenSans-Semibold;
-  font-size: 11px;
-  color: #5A5A5A;
-  letter-spacing: 0.89px; }
-  .subtotal div.uppercase {
-    text-transform: uppercase; }
-
-.editText {
-  font-family: "Gotham A", "Gotham B";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  color: #1283FC;
-  letter-spacing: -0.5px;
-  line-height: 21px; }
-
-.logo {
-  width: 118px;
-  margin-top: -59px; }
-
-.logoRow {
-  background-color: transparent;
-  margin-bottom: 0px; }
-
-.logoColumn {
-  margin-bottom: 49px; }
-  .logoColumn img {
-    width: 118px;
-    margin-top: -59px;
-    margin-left: 45px; }
-
 .submenu {
   list-style: none;
   display: inline-block;
@@ -373,15 +317,6 @@ p {
 @media (min-width: 95em) {
   .header {
     font-size: 1.75em; } }
-
-.headerImage {
-  height: 0;
-  padding-bottom: 30.66406%;
-  background: url("../../images/bg_img_6.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 150px;
-  min-width: 550px; }
 
 .footer {
   padding: 20px;
@@ -479,3 +414,6 @@ button {
 .social-icons {
   padding-top: 30px;
   padding-bottom: 30px; }
+
+.headshot {
+  width: 100%; }

@@ -15,7 +15,7 @@
                     controllerAs: 'vm'
                 },
                 'main@site.about': {
-                    templateUrl: 'app/layout/col_three.html',
+                    templateUrl: 'app/layout/col_two.html',
                     controller: 'AboutController',
                     controllerAs: 'vm'
                 },
