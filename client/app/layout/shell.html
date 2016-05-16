@@ -1,20 +1,6 @@
 <header>
-  <nav class="navbar navbar-default" >
-    <div class="container-fluid">
-      
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li ng-class="{ 'active': vm.selected === 'home'}"><a ui-sref="site.home">Home</a></li>
-          <li ng-class="{ 'active': vm.selected === 'about'}"><a ui-sref="site.about">About Bridget</a></li>
-          <li ng-class="{ 'active': vm.selected === 'services'}"><a ui-sref="site.services">Services</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-  <nav class="navbar navbar-light bg-faded">
-    <h1 class='col-xs-12' style="color:white;">Blue Willow</h1>
+  <nav class="navbar navbar-light bg-faded" id="bluewillownav">
+    <h1 class='' style="color:white;">Blue Willow</h1>
 
     <ul class="nav navbar-nav">
       <li class="nav-item" ng-class="{ 'active': vm.selected === 'home'}">
@@ -30,7 +16,7 @@
   </nav>
 </header>
 
-<div ui-view='main'></div>
+<div ui-view='main' class='main'></div>
 
 <footer>
   Contact info here

@@ -2,10 +2,7 @@
     'use strict';
 
     function HomeController() {
-
         var vm = this;
-
-
     }
 
     HomeController.$inject = [];

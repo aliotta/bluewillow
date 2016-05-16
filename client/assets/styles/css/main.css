@@ -8,6 +8,9 @@ html, body {
   font-style: normal;
   font-weight: 400; }
 
+header {
+  min-height: 150px; }
+
 .page-title, .page-subtitle, .subheader {
   color: #5A5A5A;
   font-size: 2.25em;
@@ -33,10 +36,17 @@ nav {
   background-image: url("../../images/header.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0px -300px; }
+  background-position: 0px calc(35% - 150px);
+  background-size: 100%; }
+  nav h1 {
+    color: #FFFFFF; }
 
-.nav-link {
+#bluewillownav .nav-link {
   color: #FFFFFF; }
+
+#bluewillownav .active {
+  font-weight: 600;
+  text-decoration: overline; }
 
 .button, .primaryButton, .secondaryButton, .smallButton, .link, .editLink {
   text-align: center;
@@ -71,10 +81,8 @@ nav {
   letter-spacing: -0.5px;
   line-height: 21px; }
 
-a {
-  color: blue; }
-  a:hover {
-    cursor: pointer; }
+a:hover {
+  cursor: pointer; }
 
 /*  Responsive typography*/
 /* responsive constants */

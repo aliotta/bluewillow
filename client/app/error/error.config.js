@@ -9,9 +9,6 @@
         $stateProvider
         .state('site.error', {
             url: '/error',
-            // data: {
-            //     roles: [0,1,2,3,4,5,6,7]
-            // },
             views: {
                 '@site': {
                     templateUrl: 'app/layout/shell.html',

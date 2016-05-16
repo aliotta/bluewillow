@@ -3,7 +3,6 @@
 
     function NavigationController($state) {
         var vm = this;
-   
         vm.current = $state.current.name;
     }
 

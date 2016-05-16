@@ -19,6 +19,10 @@ html, body {
 // Headers
 // *************
 
+header {
+  min-height: 150px;
+}
+
 .page-title {
     color: $darkGrey;
     font-size: 2.25em;
@@ -56,11 +60,22 @@ nav {
   background-image: url('../../images/header.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0px -300px; 
+  background-position: 0px calc(35% - 150px);
+  background-size: 100%;
+  h1 {
+    color: $white;
+  }
 }
 
-.nav-link {
-  color: $white;
+#bluewillownav {
+  .nav-link {
+    color: $white;
+  }
+
+  .active {
+    font-weight: 600;
+    text-decoration: overline;
+  }
 }
 
 // *************
@@ -118,7 +133,6 @@ nav {
 }
 
 a{
-  color: $blue;
   &:hover {
     cursor: pointer;
   }
@@ -572,3 +586,4 @@ button {
 .headshot {
   width: 100%;
 }
+
