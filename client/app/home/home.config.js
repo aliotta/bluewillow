@@ -15,7 +15,7 @@
                     controllerAs: 'vm'
                 },
                 'main@site.home': {
-                    templateUrl: 'app/layout/col_three.html',
+                    templateUrl: 'app/layout/col_one.html',
                     controller: 'HomeController',
                     controllerAs: 'vm'
                 },
@@ -24,9 +24,6 @@
                 },
                 'left@site.home': {
                     templateUrl: 'app/home/home_left.html'
-                },
-                'right@site.home': {
-                    templateUrl: 'app/home/home_right.html'
                 }
             }
         });
