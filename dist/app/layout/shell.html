@@ -1,23 +1,33 @@
 <header>
-  <nav class="navbar navbar-light bg-faded" id="bluewillownav">
-    <h1 class='' style="color:white;">Blue Willow</h1>
+  <div id="bluewillownav">  
+    <nav class="navbar navbar-light bg-faded">
+      <div class='container'>
 
-    <ul class="nav navbar-nav">
-      <li class="nav-item" ng-class="{ 'active': vm.selected === 'home'}">
-        <a class="nav-link" ui-sref="site.home">Home</a>
-      </li>
-      <li class="nav-item" ng-class="{ 'active': vm.selected === 'about'}">
-        <a class="nav-link" ui-sref="site.about">About Bridget</a>
-      </li>
-      <li class="nav-item" ng-class="{ 'active': vm.selected === 'services'}">
-        <a class="nav-link" ui-sref="site.services">Services</a>
-      </li>
-    </ul>
-  </nav>
+        <h1 class='' style="color:white;">Blue Willow</h1>
+
+        <ul class="nav navbar-nav">
+          <li class="nav-item" ng-class="{ 'active': vm.selected === 'home'}">
+            <a class="nav-link" ui-sref="site.home">Home</a>
+          </li>
+          <li class="nav-item" ng-class="{ 'active': vm.selected === 'about'}">
+            <a class="nav-link" ui-sref="site.about">About Bridget</a>
+          </li>
+          <li class="nav-item" ng-class="{ 'active': vm.selected === 'services'}">
+            <a class="nav-link" ui-sref="site.services">Services</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <div ui-view='main' class='main'></div>
-
+<hr>
 <footer>
-  Contact info here
+  <div class='container'>
+    <div class='col-xs-12'>
+      <span class='email hidden-sm-up'>Contact Bridget:</span>
+      <span class='email'> <span class='hidden-xs-down'>Contact Bridget: </span>bridget@bluewillowherbals.com</span>
+    </div>
+  </div>
 </footer>

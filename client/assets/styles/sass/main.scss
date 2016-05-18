@@ -54,6 +54,14 @@ header {
 }
 
 // *************
+// Footer
+// *************
+
+footer {
+  margin-bottom: 16px;
+}
+
+// *************
 // Nav
 // *************
 
@@ -75,8 +83,13 @@ nav {
     color: $white;
   }
 
+  .navbar {
+    border-radius: 0px;
+
+  }
+
   .active {
-    font-weight: 600;
+    //font-weight: 600;
     text-decoration: overline;
   }
 }
@@ -648,4 +661,7 @@ button {
   margin-bottom: 15px;
 }
 
-
+.email{
+  display: block;
+  text-align: center;
+}

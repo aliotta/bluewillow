@@ -32,6 +32,9 @@ header {
     text-align: left;
     margin-top: 0; } }
 
+footer {
+  margin-bottom: 16px; }
+
 nav {
   background-image: url("../../images/header.jpg");
   background-repeat: no-repeat;
@@ -46,8 +49,10 @@ nav {
   text-shadow: black 0px 0px 5px;
   color: #FFFFFF; }
 
+#bluewillownav .navbar {
+  border-radius: 0px; }
+
 #bluewillownav .active {
-  font-weight: 600;
   text-decoration: overline; }
 
 .button, .primaryButton, .secondaryButton, .smallButton, .link, .editLink {
@@ -471,3 +476,7 @@ button {
 .side-image-mobile {
   width: 200px;
   margin-bottom: 15px; }
+
+.email {
+  display: block;
+  text-align: center; }
