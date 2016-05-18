@@ -39,11 +39,23 @@ nav {
   background-image: url("../../images/header.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0px calc(30% - 150px);
+  background-position: 0px 0%;
   background-size: 100%; }
   nav h1 {
     text-shadow: black 0px 0px 5px;
     color: #FFFFFF; }
+
+@media (min-width: 30em) {
+  nav {
+    background-position: 0px 0%; } }
+
+@media (min-width: 55em) {
+  nav {
+    background-position: 0px -250px; } }
+
+@media (min-width: 95em) {
+  nav {
+    background-position: 0px -200px; } }
 
 #bluewillownav .nav-link {
   text-shadow: black 0px 0px 5px;

@@ -69,11 +69,29 @@ nav {
   background-image: url('../../images/header.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0px calc(30% - 150px);
+  background-position: 0px 0%;
   background-size: 100%;
   h1 {
     text-shadow: black 0px 0px 5px;
     color: $white;
+  }
+}
+
+@media (min-width: $mobileWidth) {
+  nav {
+    background-position: 0px 0%;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  nav {
+    background-position: 0px -250px;
+  }
+}
+
+@media (min-width: $widescreenWidth) {
+  nav {
+    background-position: 0px -200px;
   }
 }
 
