@@ -162,7 +162,7 @@ gulp.task('inline', function(callback) {
     base: 'client/',
     js: uglify,
     css: minifyCss,
-    disabledTypes: [],
+    disabledTypes: ['svg', 'img'],
     ignore: []
   }))
   .pipe(gulp.dest('dist/'));
