@@ -36,7 +36,7 @@ footer {
   margin-bottom: 16px; }
 
 nav {
-  background-image: url("../../images/header.jpg");
+  background-image: url("./assets/images/header.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 0px 0%;
