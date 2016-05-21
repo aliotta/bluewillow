@@ -3,7 +3,8 @@
 // =====================================
 var express         = require('express'),
   http            = require('http'),
-  app             = express()
+  app             = express(),
+  compress = require('compression');
 
 // =======================
 // configuration =========
@@ -19,6 +20,7 @@ if(process.env.NODE_ENV === 'production'){
     clientPath = '/client';
 }
 
+app.use(compress());
 app.use(express.static(__dirname + clientPath));
 
 
