@@ -117,7 +117,7 @@ gulp.task('clean:dist', function(callback) {
 
 // Build task
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', 'sass', 'lint', ['useref', 'copy-html', 'copy-fonts', 'images'], callback);
+  runSequence('clean:dist', 'sass', 'lint', ['useref', 'copy-html', 'copy-fonts', 'images'], 'inline',callback);
 });
 
 gulp.task('code',function(callback) {
