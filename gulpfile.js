@@ -13,6 +13,7 @@ var gulp          = require('gulp'),
     purify        = require('gulp-purifycss'),    // Purify Bootstrap
     git           = require('gulp-git'),          // Git commands
     runSequence   = require('run-sequence'),      // To run tasks in sequence
+    inline = require('gulp-inline'),     
     karma = require('karma').server;
 
 var jsFiles                 = ['client/app/*.js', 'client/app/**/*.js', 'client/app/**/**/*.js'],
@@ -154,4 +155,17 @@ gulp.task('push', function(){
 gulp.task('deploy', function(callback) {
   runSequence('add', 'commit', 'push', callback);
 });
+
+gulp.task('inline', function(callback) {
+  return gulp.src('dist/index.html')
+  .pipe(inline({
+    base: 'client/',
+    js: uglify,
+    css: minifyCss,
+    disabledTypes: [],
+    ignore: []
+  }))
+  .pipe(gulp.dest('dist/'));
+});
+
 
