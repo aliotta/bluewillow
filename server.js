@@ -10,6 +10,7 @@ var express         = require('express'),
 // configuration =========
 // =======================
 
+var six_months = 60*60*24*31*6;
 
 var port = process.env.PORT || 5000; 
 
@@ -21,7 +22,7 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 app.use(compress());
-app.use(express.static(__dirname + clientPath));
+app.use(express.static(__dirname + clientPath, { maxAge: six_months }));
 
 
 // =======================
