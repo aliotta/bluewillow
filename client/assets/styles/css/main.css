@@ -67,7 +67,7 @@ nav {
 #bluewillownav .active {
   text-decoration: overline; }
 
-.button, .primaryButton, .secondaryButton, .smallButton, .link, .editLink {
+.button, .primaryButton, .secondaryButton, .smallButton {
   text-align: center;
   border-radius: 3px;
   padding: 4px 20px 4px 20px;
@@ -89,10 +89,8 @@ nav {
   width: 69px;
   height: 46px; }
 
-.link, .editLink {
-  color: blue; }
-  .link:hover, .editLink:hover {
-    cursor: pointer; }
+.link:hover, .editLink:hover {
+  cursor: pointer; }
 
 .editLink {
   font-size: 1.125em;
@@ -199,6 +197,7 @@ h4 {
 
 @media (min-width: 55em) {
   h4 {
+    font-size: 1.25em;
     line-height: 1.22222222;
     /* (22px / 18px */ } }
 
@@ -489,6 +488,9 @@ button {
   width: 200px;
   margin-bottom: 15px; }
 
-.email {
+.footerSpan {
   display: block;
+  text-align: center; }
+
+.homeContent {
   text-align: center; }
