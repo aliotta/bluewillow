@@ -693,10 +693,33 @@ button {
 
 .homeContent{
   text-align: center;
+  background-image: url('./assets/images/header.jpg');
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  height: 700px;
+  background-size: 200vh;
+  height: 100vh;
+}
+
+@media (min-width: $desktopWidth) {
+  .homeContent {
+    background-size: 100%;
+  }
 }
 
 .main{
   height: 64vh;
   min-height: 64vh;
+  margin-top: 50px;
+}
 
+.lightbox{
+  background-color: rgba(255,255,255,.75);
+}
+
+.verticle-center{
+  min-height: 100%;
+  min-heoght: 100vh;
+  display: flex;
+  align-items: center;
 }

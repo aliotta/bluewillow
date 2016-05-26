@@ -53,7 +53,7 @@ nav {
   nav {
     background-position: 0px 0%; } }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   nav {
     background-position: 0px -250px; } }
 
@@ -125,7 +125,7 @@ body {
   line-height: 1.25;
   /* equivalent to 20px */ }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   #page {
     font-size: 1em;
     /* equivalent to 16px */
@@ -145,7 +145,7 @@ h1 {
     /* 2.5x body copy size = 40px */
     line-height: 1.125; } }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   h1 {
     font-size: 4em;
     /* 2.5x body copy size = 40px */
@@ -163,7 +163,7 @@ h2 {
   line-height: 1.15384615;
   /* 30px / 26px */ }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   h2 {
     font-size: 2em;
     /* 2x body copy size = 32px */
@@ -181,7 +181,7 @@ h3 {
   line-height: 1.13636364;
   /* 25px / 22px */ }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   h3 {
     font-size: 1.5em;
     /* 1.5x body copy size = 24px */
@@ -199,7 +199,7 @@ h4 {
   line-height: 1.11111111;
   font-weight: normal; }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   h4 {
     font-size: 1.25em;
     line-height: 1.22222222;
@@ -217,7 +217,7 @@ blockquote {
   /* 25px / 20px */
   border: 0px; }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   blockquote {
     font-size: 1.5em;
     /* 24px / 16px = */
@@ -244,7 +244,7 @@ p {
     line-height: 1.45833333;
     /* 35px / 24px */ } }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   p {
     font-size: 1.5em;
     /* 24px / 16px = */
@@ -353,7 +353,7 @@ p {
   .header img {
     vertical-align: baseline; }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   .header {
     font-size: 1.5em; } }
 
@@ -398,7 +398,7 @@ li {
     line-height: 1.45833333;
     /* 35px / 24px */ } }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   li {
     font-size: 1.5em;
     /* 24px / 16px = */
@@ -425,7 +425,7 @@ input {
     line-height: 1.45833333;
     /* 35px / 24px */ } }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   input {
     font-size: 1.5em;
     /* 24px / 16px = */
@@ -441,7 +441,7 @@ button {
   font-family: "Gotham A", "Gotham B";
   font-size: 1em; }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   button {
     font-size: 2em;
     /* 24px / 16px = */
@@ -500,8 +500,28 @@ button {
   margin-bottom: 16px; }
 
 .homeContent {
-  text-align: center; }
+  text-align: center;
+  background-image: url("./assets/images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  height: 700px;
+  background-size: 200vh;
+  height: 100vh; }
+
+@media (min-width: 60em) {
+  .homeContent {
+    background-size: 100%; } }
 
 .main {
   height: 64vh;
-  min-height: 64vh; }
+  min-height: 64vh;
+  margin-top: 50px; }
+
+.lightbox {
+  background-color: rgba(255, 255, 255, 0.75); }
+
+.verticle-center {
+  min-height: 100%;
+  min-heoght: 100vh;
+  display: flex;
+  align-items: center; }

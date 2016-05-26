@@ -10,12 +10,12 @@
             url: '/home',
             views: {
                 '@site': {
-                    templateUrl: 'app/layout/shell.html',
+                    templateUrl: 'app/layout/home.shell.html',
                     controller: 'ShellController',
                     controllerAs: 'vm'
                 },
                 'main@site.home': {
-                    templateUrl: 'app/layout/col_one.html',
+                    templateUrl: 'app/layout/col_zero.html',
                     controller: 'HomeController',
                     controllerAs: 'vm'
                 },
