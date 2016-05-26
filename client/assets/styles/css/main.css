@@ -33,7 +33,11 @@ header {
     margin-top: 0; } }
 
 footer {
-  margin-bottom: 16px; }
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em; }
 
 nav {
   background-image: url("./assets/images/header.jpg");
@@ -492,5 +496,12 @@ button {
   display: block;
   text-align: center; }
 
+.footerSpanLast {
+  margin-bottom: 16px; }
+
 .homeContent {
   text-align: center; }
+
+.main {
+  height: 64vh;
+  min-height: 64vh; }
