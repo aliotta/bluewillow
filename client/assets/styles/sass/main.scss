@@ -2,16 +2,7 @@
 
 html, body {
     font-size: 16px;
-}
-
-// *************
-// Fonts
-// *************
-
-.gothamBook {
     font-family: $defaultFont;
-    font-style: normal;
-    font-weight: 400;
 }
 
 
@@ -20,14 +11,13 @@ html, body {
 // *************
 
 header {
-  //min-height: 150px;
   margin-bottom: 20px;
 }
 
 .page-title {
     color: $darkGrey;
     font-size: 2.25em;
-    font-family: $defaultFont;
+    
     font-weight: 500;
     letter-spacing: -1.5px;
     margin-top: 40px;
@@ -70,11 +60,7 @@ footer {
 // *************
 
 nav {
-  background-image: url('./assets/images/header.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 0px 0%;
-  background-size: 100%;
+  
   h1 {
     text-shadow: black 0px 0px 5px;
     color: $white;
@@ -100,6 +86,41 @@ nav {
 }
 
 #bluewillownav {
+  nav{
+    background-image: url('/assets/images/header.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0px 0%;
+    background-size: 100%;
+  }
+
+  .nav-link {
+    text-shadow: black 0px 0px 5px;
+    color: $white;
+  }
+
+  .navbar {
+    border-radius: 0px;
+
+  }
+
+  .active {
+    //font-weight: 600;
+    text-decoration: overline;
+  }
+}
+
+#homenav {
+
+  ul { 
+    text-align: center; 
+  } 
+
+  ul li { 
+    display: inline-block; 
+    float: none;
+  } 
+
   .nav-link {
     text-shadow: black 0px 0px 5px;
     color: $white;
@@ -124,7 +145,7 @@ nav {
   text-align: center;
   border-radius: 3px;
   padding: 4px 20px 4px 20px;
-  font-family: $defaultFont;
+  
   font-style: normal;
   color: $white;
   letter-spacing: -0.5px;
@@ -161,7 +182,6 @@ nav {
 
 .editLink {
     @extend .link;
-    @extend .gothamBook;
     font-size: 1.125em;
     color: $link;
     letter-spacing: -0.5px;
@@ -209,7 +229,7 @@ body {
 }
 
 h1 {
-  font-family: $defaultFont;
+  
   font-size: 2.5em;
   /* 2x body copy size = 32px */
   line-height: 1.25;
@@ -240,7 +260,7 @@ h1 {
 }
 
 h2 {
-  font-family: $defaultFont;
+  
   font-size: 1.5em;
   /* 1.625x body copy size = 26px */
   line-height: 1.15384615;
@@ -264,7 +284,7 @@ h2 {
 }
 
 h3 {
-  font-family: $defaultFont;
+  
   font-size: 1.375em;
   /* 1.375x body copy size = 22px */
   line-height: 1.13636364;
@@ -287,7 +307,7 @@ h3 {
 }
 
 h4 {
-  font-family: $defaultFont;
+  
   font-size: 1.125em;
   /* 1.125x body copy size = 18px */
   line-height: 1.11111111;
@@ -309,7 +329,7 @@ h4 {
 }
 
 blockquote {
-  font-family: $defaultFont;
+  
   font-size: 1.25em;
   /* 20px / 16px */
   line-height: 1.25;
@@ -335,17 +355,17 @@ blockquote {
 }
 
 p {
-  font-family: $defaultFont;
+  
   font-size: 1em;
   /* 20px / 16px */
-  line-height: 1.25;
+  line-height: 1.3;
   /* 25px / 20px */
   border: 0px;
 }
 
 @media (min-width: $mobileWidth) {
   p {
-    font-size: 1.25em;
+    font-size: 1em;
     /* 24px / 16px = */
     line-height: 1.45833333;
     /* 35px / 24px */
@@ -355,7 +375,7 @@ p {
 
 @media (min-width: $desktopWidth) {
   p {
-    font-size: 1.5em;
+    font-size: 1em;
     /* 24px / 16px = */
     line-height: 1.45833333;
     /* 35px / 24px */
@@ -364,7 +384,7 @@ p {
 
 @media (min-width: $widescreenWidth) {
   p {
-    font-size: 1.75em;
+    font-size: 1em;
     line-height: 1.6;
   }
 }
@@ -374,7 +394,7 @@ p {
 }
 
 .navigationMenu {
-  font-family: $defaultFont;
+  
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -384,7 +404,7 @@ p {
 }
 
 .title {
-  font-family: $defaultFont;
+  
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
@@ -400,7 +420,7 @@ p {
 }
 
 .sideTitle {
-  font-family: $defaultFont;
+  
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -548,7 +568,7 @@ p {
 }
 
 li {
-  font-family: $defaultFont;
+  
   font-size: 1em;
 }
 
@@ -585,7 +605,7 @@ li {
 }
 
 input {
-  font-family: $defaultFont;
+  
   padding: 10px;
   font-size: 1em;
 }
@@ -616,7 +636,7 @@ input {
 }
 
 button {
-  font-family: $defaultFont;
+  
   font-size: 1em;
 }
 
@@ -675,11 +695,14 @@ button {
 
 .side-image {
   width: 100%;
+  border: 3px solid;
 }
 
 .side-image-mobile {
   width: 200px;
   margin-bottom: 15px;
+  border: 3px solid;
+
 }
 
 .footerSpan{
@@ -693,18 +716,6 @@ button {
 
 .homeContent{
   text-align: center;
-  background-image: url('./assets/images/header.jpg');
-  background-repeat: no-repeat;
-  background-size: 1000px;
-  height: 700px;
-  background-size: 200vh;
-  height: 100vh;
-}
-
-@media (min-width: $desktopWidth) {
-  .homeContent {
-    background-size: 100%;
-  }
 }
 
 .main{
@@ -714,12 +725,35 @@ button {
 }
 
 .lightbox{
+  padding: 15px;
   background-color: rgba(255,255,255,.75);
 }
 
 .verticle-center{
   min-height: 100%;
-  min-heoght: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }

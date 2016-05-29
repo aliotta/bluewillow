@@ -3,6 +3,7 @@
 
     function HomeController() {
         var vm = this;
+        vm.selected = 'home';
     }
 
     HomeController.$inject = [];

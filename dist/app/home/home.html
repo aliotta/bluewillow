@@ -1,8 +1,29 @@
+<img src="../../assets/images/header.jpg" class='bg'>
 <div class='homeContent verticle-center'>
   <div class='container'>
+    <div class='col-xs-12'>
+      <div id="homenav">  
+        <nav class="navbar navbar-light">
+          <div class='container'>
+            <ul class="nav navbar-nav">
+              <li class="nav-item" ng-class="{ 'active': vm.selected === 'home'}">
+                <a class="nav-link" ui-sref="site.home">Home</a>
+              </li>
+              <li class="nav-item" ng-class="{ 'active': vm.selected === 'services'}">
+                <a class="nav-link" ui-sref="site.services">Services</a>
+              </li>
+              <li class="nav-item" ng-class="{ 'active': vm.selected === 'about'}">
+                <a class="nav-link" ui-sref="site.about">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
     <div class='col-xs-12 lightbox '>
+
       <h4>Community Herbalist</h4>
-      <h1>Bridget Sadeghian</h1>
+      <h1>Bridget Afsonna</h1>
       <h4 ui-sref='site.services' class='link hidden-sm-up'>Consultations | Medicine | Support</h4>
       <h3 ui-sref='site.services' class='link hidden-xs-down'>Consultations | Medicine | Support</h3>
       <br>
