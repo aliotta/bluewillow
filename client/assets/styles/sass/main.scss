@@ -308,7 +308,7 @@ h3 {
 
 h4 {
   
-  font-size: 1em;
+  font-size: .9em;
   /* 1.125x body copy size = 18px */
   line-height: 1.11111111;
   font-weight: normal;
@@ -719,8 +719,14 @@ button {
 }
 
 .lightbox{
-  padding: 15px;
+  padding: 15px 5px 15px 5px;
   background-color: rgba(255,255,255,.75);
+}
+
+@media (min-width: $mobileWidth) {
+  .lightbox{
+    padding: 15px;
+  }
 }
 
 .verticle-center{
