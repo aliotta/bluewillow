@@ -50,9 +50,9 @@ header {
 footer {
   clear: both;
   position: relative;
-  z-index: 10;
+  //z-index: 10;
   height: 3em;
-  margin-top: -3em;
+  //margin-top: 10em;
 }
 
 // *************
@@ -502,12 +502,6 @@ p {
   padding-top: 33px;
 }
 
-//.middleHeaderColumn {
-  //@extend .col-xs-10;
-  //@extend .col-sm-10;
-//}
-
-
 .header {
   background-color: $white;
   height: $headerHeight;
@@ -719,8 +713,8 @@ button {
 }
 
 .main{
-  height: 64vh;
-  min-height: 64vh;
+  //height: 64vh;
+  //min-height: 64vh;
   margin-top: 50px;
 }
 
