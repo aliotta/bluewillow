@@ -112,8 +112,10 @@ nav h1 {
   letter-spacing: -0.5px;
   line-height: 21px; }
 
-a:hover {
-  cursor: pointer; }
+a {
+  color: black; }
+  a:hover {
+    cursor: pointer; }
 
 /*  Responsive typography*/
 /* responsive constants */
