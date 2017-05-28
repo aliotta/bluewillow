@@ -15,7 +15,7 @@
                     controllerAs: 'vm'
                 },
                 'main@site.services': {
-                    templateUrl: 'app/layout/col_two.html',
+                    templateUrl: 'app/layout/col_one.html',
                     controller: 'ServicesController',
                     controllerAs: 'vm'
                 },

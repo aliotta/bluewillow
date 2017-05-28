@@ -2,7 +2,9 @@
 /* responsive constants */
 html, body {
   font-size: 16px;
-  font-family: "Bitter", serif; }
+  font-family: "Bitter", serif;
+  background-color: slategray;
+  color: black; }
 
 header {
   margin-bottom: 20px; }
@@ -49,7 +51,7 @@ nav h1 {
     background-position: 0px -200px; } }
 
 #bluewillownav nav {
-  background-image: url("/assets/images/header.jpg");
+  background-image: url("/assets/images/bwh_web_background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 0px 0%;
@@ -348,7 +350,7 @@ p {
   padding-top: 33px; }
 
 .header {
-  background-color: #FFFFFF;
+  background-color: slategray;
   height: 86px;
   padding-top: 20px;
   padding-right: 20px;
@@ -366,7 +368,7 @@ p {
 
 .footer {
   padding: 20px;
-  background-color: #FFFFFF; }
+  background-color: slategray; }
   .footer ul {
     list-style-type: none;
     padding: 0px; }
