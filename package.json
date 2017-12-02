@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "bluewillowherbals",
   "main": "server.js",
-  "engine": "4.4.1",
+  "engine": "6.11.5",
   "dependencies": {
     "angulartics": "^1.5.0",
     "bower": "^1.8.2",
