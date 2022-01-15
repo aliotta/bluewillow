@@ -39,7 +39,7 @@
     "inline": "0.0.2",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.1.0",
-    "shelljs": "^0.7.0",
+    "shelljs": "^0.8.5",
     "strip-json-comments": "^2.0.1"
   },
   "scripts": {
